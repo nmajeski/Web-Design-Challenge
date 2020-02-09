@@ -64,6 +64,17 @@ li {
     font-size: 32px;
     font-weight: bolder;
 }
+.container div h2 {
+    color: #4CA8A3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bolder;
+}
+@media(min-width: 1400px) {
+    .container div h2 {
+        font-size: 24px;
+    }
+}
 .row {
     margin: 25px;
 }
@@ -72,7 +83,7 @@ li {
         margin: 50px;
     }
 }
-.summary {
+.summary, .visualization-summary {
     background-color: white;
     margin-bottom: 20px;
     padding: 35px 25px 10px 25px;
@@ -101,6 +112,38 @@ li {
 .summary hr, .visualizations hr {
     margin-top: 25px;
     margin-bottom: 25px;
+}
+.comparison, .data {
+    background: white;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+.comparison div span {
+    text-align: center;
+    width: 100%;
+}
+@media(min-width: 1400px) {
+    .comparison div span {
+        width: 50%;
+    }
+}
+.comparison img {
+    height: 350px;
+}
+.data-table {
+    margin: 0 auto;
+    width: 100%;
+}
+.dataframe {
+    border-collapse: collapse;
+    font-size: 11pt; 
+    text-align: center;
+}
+.dataframe th {
+    font-weight: bold;
+}
+td, th {
+    text-align: center;
 }
 footer {
     bottom: 0px;

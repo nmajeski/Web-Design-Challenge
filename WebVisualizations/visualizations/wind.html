@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Lattitude Landing</title>
-        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="../reset.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="../main.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-lg">
-            <a class="navbar-brand lattitude" href="index.html">Lattitude</a>
+            <a class="navbar-brand lattitude" href="../index.html">Lattitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,23 +23,23 @@
                             Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
-                            <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+                            <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="comparison.html">Comparison</a>
+                        <a class="nav-link" href="../comparison.html">Comparison</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="data.html">Data</a>
+                        <a class="nav-link" href="../data.html">Data</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <nav class="navbar navbar-light navbar-sm">
-            <a class="navbar-brand lattitude" href="index.html">Lattitude</a>
+            <a class="navbar-brand lattitude" href="../index.html">Lattitude</a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 <span class="navbar-toggler-icon my-toggler"></span>
             </button>
@@ -50,17 +50,17 @@
                             Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
-                            <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+                            <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="comparison.html">Comparison</a>
+                        <a class="nav-link" href="../comparison.html">Comparison</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="data.html">Data</a>
+                        <a class="nav-link" href="../data.html">Data</a>
                     </li>
                 </ul>
             </div>
@@ -68,23 +68,22 @@
         <main class="container">
             <div class="row">
                 <div class="col-xl-8">
-                    <div class="summary">
-                        <h1>Summary: Latitude vs. X</h1>
+                    <div class="visualization-summary">
+                        <h1>Wind Speed</h1>
                         <hr>
-                        <img src="Resources/assets/images/Fig1.png">
-                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-                    </div>
+                        <img src="../Resources/assets/images/Fig4.png">
+                        <p>Wind speed seemed to be higher for places that were further away from the equator (min and max latitudes). Most places in between had wind speeds of less than 10 MPH.</p>
+                    </div class="visualization-summary">
                 </div>
                 <div class="col-xl-4">
                     <div class="visualizations">
                         <h1>Visualizations</h1>
                         <hr>
                         <div>
-                            <img src="Resources/assets/images/Fig1.png">
-                            <img src="Resources/assets/images/Fig2.png">
-                            <img src="Resources/assets/images/Fig3.png">
-                            <img src="Resources/assets/images/Fig4.png">
+                            <a href="temp.html"><img src="../Resources/assets/images/Fig1.png"></a>
+                            <a href="humidity.html"><img src="../Resources/assets/images/Fig2.png"></a>
+                            <a href="cloudiness.html"><img src="../Resources/assets/images/Fig3.png"></a>
+                            <a href="wind.html"><img src="../Resources/assets/images/Fig4.png"></a>
                         </div>
                     </div>
                 </div>
